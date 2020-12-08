@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* grid-template-columns: 200px 1fr 1fr; */
+
+    /* fr - fraction - matavimo vienetas stulpeliams, vietoje calc'o */
+
+    /* 1) 200px
+    2) 1/2 likusio plocio
+    3  1/2 likusio plocio */
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid;
+}
+
