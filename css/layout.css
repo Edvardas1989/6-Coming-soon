@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-
+}
     /* grid-template-columns: 200px 1fr 1fr; */
 
     /* fr - fraction - matavimo vienetas stulpeliams, vietoje calc'o */
@@ -9,18 +9,74 @@ body {
     /* 1) 200px
     2) 1/2 likusio plocio
     3  1/2 likusio plocio */
-}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 200px 600px 200px 1fr;
-    padding: 20px;
-    border: 1px solid;
+    padding: 40px 0;
+    
 }
     .container > .short {
-        
-    }
+        grid-column: 3/4;
+        /* 3/4 nurodo tarp kuriu eiluciu tekstas bus pastatytas. */
+        }
+
     .container > .long {
-
+        grid-column: 2/5;
+        }
+        /* .container > .long > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        }
+        .container > .long > .right {
+            display: inline-block;
+            width: 40%;
+            float: right; */
+        
+        .container > .long.columns {
+            display: grid;
+            grid-template-columns: 5fr 1fr 4fr;
+        }
+            .container > .long.columns {
+                display: grid;
+                grid-template-columns: 5fr 1fr 4fr;
+            }
+                .container > .long.columns > .left {
+                    grid-column: 1/2;
+                }
+                .container > long.columns > .right {
+                    grid-column: 3/4;
+                }
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr 100px 600px 100px 1fr;
     }
+}
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+        .container > .short {
+            grid-column: 2/3;
+            }
 
+        .container > .long {
+            grid-column: 2/3;
+            }
+}
+
+@media (max-width: 640px) {
+    .container {
+        grid-template-columns: 20px 1frx 20px;
+    }
+        .container > .long.columns {
+            grid-template-columns: 1fr;
+        }
+            .container > .long.columns > .right {
+                grid-column: 1/2;
+            }
+}
+
+    
+        
