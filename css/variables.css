@@ -1,0 +1,9 @@
+/* root - teviskiausias elementas (net ir uz html). 
+css'e kintamieji kuriami su 2 minusais priekyje */
+
+:root {
+    --gap: 20px;
+    --big-gap: calc(2.5 * var(--gap));
+    --main-color: #03A9;
+}
+
