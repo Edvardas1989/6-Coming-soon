@@ -71,4 +71,66 @@ main p {
 /* footer */
 footer.container {
     padding-top: 0;
+    text-align: center;
 }
+
+footer > .long {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+    footer .fa {
+        color: #fff;
+        font-size: 15px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border-radius: 50%; 
+    }
+        footer .fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    footer p {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff9;
+    }
+    footer p > span {
+        padding: 0 10px;
+        position: relative;
+        }
+        footer p > span + span::before {
+            content: '';
+            display: inline-block;
+            height: 15px;
+            width: 1px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -2px;
+            transform: translateY(-50%);
+        }
+
+@media (max-width: 640px) {
+    footer p > span {
+        display: inline-block;
+        width: 100%;
+    }
+    footer p > span + span::before {
+        display: none;
+    }
+}
+
