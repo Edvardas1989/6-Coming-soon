@@ -1,0 +1,63 @@
+.mouse {
+    display: inline-block;
+    width: 160px;
+    height: 240px;
+    border: 15px solid #fff;
+    border-radius: 80px;
+}
+.mouse > .wheel {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 8px;
+    animation-name: scrolling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* background-image: url (../img/logo.png);
+    background-size: contain;
+} */
+
+    .mouse > .wheel:hover {
+        animation-play-state: paused;
+    }
+
+@keyframes scrolling {
+    0% {
+        margin-top: 40px;
+        background-color: #fff;
+        /* width: 15px; 
+        border-radius: 8px;
+        opacity: 1; */
+        transform: rotate(0);
+
+    }
+    /* 10% {
+        margin-top: 70px;
+        margin-left: -50px; */
+    /* }
+    20% {
+        margin-top: 0px;
+        margin-left: -50px;
+    }
+    40% {
+         margin-top: 0px;
+         margin-left: 50px;
+    } */
+    100% {
+        margin-top: 140px;
+        background-color: #fff;
+        /* width: 30px; 
+        border-radius: 15px;
+        opacity: 0; */
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* scena
+aktoriai
+laikas
+*/
