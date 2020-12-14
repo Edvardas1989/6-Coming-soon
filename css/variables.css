@@ -8,3 +8,11 @@ css'e kintamieji kuriami su 2 minusais priekyje */
     --secondary-color: #EA1E63;
 }
 
+/* :root {
+    1rem = 20px;
+
+    --gap: 1rem;
+    --big-gap: calc(2.5rem * var(--gap));
+    --main-color: #03A9;
+    --secondary-color: #EA1E63;
+} */
