@@ -1,0 +1,32 @@
+.clock {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 4, 1fr;
+    row-gap: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.clock > .time {
+    display: inline-block;
+    width: 100%;
+}
+    .clock > .time > .value {
+        display: inline-block;
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .clock > .time > .label {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+@media (max-width: 640px) {
+    .clock {
+        grid-template-columns: 1fr 1fr;
+    }
+}
