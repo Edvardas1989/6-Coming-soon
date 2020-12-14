@@ -1,7 +1,7 @@
 .clock {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    grid-template-columns: 4, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 4, 1fr; */
     row-gap: 30px;
     color: #fff;
     text-transform: uppercase;
