@@ -68,16 +68,6 @@ main p {
             text-decoration: underline;
         }
 
-.progress-bar.bar-1 > .bottom > .progress {
-    width: 90%;
-}
-.progress-bar.bar-2 > .bottom > .progress {
-    width: 50%;
-}
-.progress-bar.bar-3 > .bottom > .progress {
-    width: 65%;
-}
-
 /* footer */
 footer.container {
     padding-top: 0;
