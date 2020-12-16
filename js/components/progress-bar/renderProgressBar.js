@@ -21,9 +21,11 @@ function renderProgressBar(selector, data) {
     console.log(HTML);
 
 // RANDAME VIETA KUR REIKES PADETI TURINI
-    const DOM = document.querySelector('.left');
+    const DOM = document.querySelector('.left > p');
 
     DOM.innerHTML += HTML;
+
+    // DOM.insertAdjacentHTML('beforebegin', HTML)
 }
 
 export { renderProgressBar }
