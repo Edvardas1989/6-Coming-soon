@@ -8,7 +8,7 @@ function renderProgressBar(selector, data) {
     }
 
 // RANDAME VIETA KUR REIKES PADETI TURINI
-    const DOM = document.querySelector('.left > p'); 
+    const DOM = document.querySelector(selector); 
     if (!DOM)  {
         return false;
     }
@@ -22,7 +22,6 @@ function renderProgressBar(selector, data) {
             continue;
         }
 
-        console.log(bar);
         HTML += `<div class="progress-bar">
         <div class="top">
             <div class="label">${bar.title}</div>
