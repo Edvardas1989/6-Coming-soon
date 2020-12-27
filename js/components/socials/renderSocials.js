@@ -23,7 +23,7 @@ for (let item of data) {
     HTML += `<a href="$(item.href}" target="_blank" class="fa fa-${item.icon}"></a>`;
 }
 
-console.log(HTML);
+// console.log(HTML);
 
 // post logic validation
 
