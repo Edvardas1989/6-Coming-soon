@@ -71,10 +71,11 @@ class Clock {
         let metinesMiliseconds = (new Date(this.dateString)).getTime();
         setInterval(() => {
             const now = Date.now();
-            const diff = metinesMiliseconds - now;
+            let diff = metinesMiliseconds - now;
             if (diff < 0) {
                 this.atnaujintiInformacija();
                 metinesMiliseconds = (new Date(this.dateString)).getTime();
+                diff = metinesMiliseconds - now;
             } 
             // sis perskaiciavimass su if padarytas tam, kad sukpsejus paskutinem sekundem nerefreshinus puslapio skaiciai pradetu rodytis su minusu, t.y. skaiciuotu prabegusi laika nuo praejusiu metiniu (iki refresh page)
 
