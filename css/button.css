@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    line-height: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 4px #0006;
+    opacity: 0.9;
+    cursor: pointer;
+}
+    .btn:hover {
+        box-shadow: 0 2px 4px #000;
+        opacity: 1;
+    }
+        /* .btn.btn-success {
+            background-color: green;
+            color: #fff;
+
+        }
+     */

@@ -1,0 +1,25 @@
+.form {
+    display: inline-block;
+    width: 100%;
+}
+    .form > input {
+        display: inline-block;
+        width: 100%;
+        padding: 8px 0;
+        margin-bottom: 20px;
+        color: #555;
+        border: none;
+        border-bottom: 1px solid #555;
+        line-height: 24px;
+        font-size: 17px;
+        outline-color: var(--main-color);
+    }
+    .form > textarea.input {
+        min-height: 88px;
+        max-height: 256px;
+        resize: vertical;
+    }
+    .hero .form > .input::placeholder {
+        color: inherit;
+    }
+
