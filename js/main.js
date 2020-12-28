@@ -6,7 +6,13 @@ import { renderProgressBar } from './components/progress-bar/renderProgressBar.j
 import { socialsData } from './data/socialsData.js';
 import { renderSocials } from './components/socials/renderSocials.js';
 
-const clock = new Clock('.hero .clock');
+const clock = new Clock('.hero .clock', {
+    month: 1,
+    day: 1, 
+    hour: 0,
+    minutes: 0,
+    seconds: 0
+});
 clock.init();
 
 
